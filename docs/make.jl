@@ -13,6 +13,7 @@ const OUTPUT_DIR = joinpath(@__DIR__, "src/literated")
 
 pages = [
     "Home" => "index.md",
+    "Our Team" => "people.md",
 ]
 
 #----------

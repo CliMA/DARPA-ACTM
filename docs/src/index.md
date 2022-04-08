@@ -16,7 +16,7 @@ The overall goal of this project is to achieve a step change in the accuracy of 
 - `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty.
 
 
-Module                                      | Purpose
+Package                                     | Purpose
 --------------------------------------------|--------------------------------------------------------
 EnsembleKalmanProcesses.jl                  | Implementation of gradient-free optimization techniques
 TurbulenceConvection.jl                     | Implementation of EDMF scheme of turbulence, convection and clouds
