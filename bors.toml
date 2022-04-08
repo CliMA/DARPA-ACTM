@@ -1,5 +1,5 @@
 status = [
-  "ci",
+  "ci 1.6.0 - ubuntu-latest",
 ]
 delete_merged_branches = true
 timeout_sec = 10800
