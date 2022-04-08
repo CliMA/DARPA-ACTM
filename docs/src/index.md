@@ -9,11 +9,11 @@ The overall goal of this project is to achieve a step change in the accuracy of 
 
 ### Repositories associated with the project
 
-- `EnsembleKalmanProcesses.jl` (EKP) is a library of derivative-free Bayesian optimization techniques based on the Ensemble Kalman Filters, a well known family of approximate filters used for data assimilation.
+- `EnsembleKalmanProcesses.jl` (EKP) is a library of derivative-free Bayesian optimization techniques based on the Ensemble Kalman Filters, a well known family of approximate filters used for data assimilation. You can access the repository [here](https://github.com/CliMA/EnsembleKalmanProcesses.jl), and the documentation [here](https://clima.github.io/EnsembleKalmanProcesses.jl/dev/).
 
-- `TurbulenceConvection.jl` (TC) is a software package that implements the extended eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection. The package also provides standalone drivers to simulate the lower troposphere on a single-column basis.
+- `TurbulenceConvection.jl` (TC) is a software package that implements the extended eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection. The package also provides standalone drivers to simulate the lower troposphere on a single-column basis. You can access the repository [here](https://github.com/CliMA/TurbulenceConvection.jl). The documentation for this package is still under development.
 
-- `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty.
+- `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty. You can access the repository [here](https://github.com/CliMA/CalibrateEDMF.jl). The documentation for this package is still under development.
 
 
 Module                                      | Purpose
