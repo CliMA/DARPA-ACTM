@@ -1,5 +1,5 @@
 status = [
-  "docs-build",
+  "ci",
 ]
 delete_merged_branches = true
 timeout_sec = 10800
