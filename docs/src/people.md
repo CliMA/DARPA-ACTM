@@ -19,4 +19,4 @@ Our team is composed of applied mathematicians, machine learning researchers and
 ### Research Scientists
 
 - [Zhaoyi Shen](https://szy21.github.io), Research scientist, California Institute of Technology
-- Yair Cohen, Research scientist, California Institute of Technology
+- [Yair Cohen](https://climate-dynamics.org/people/ycohen/), Research scientist, California Institute of Technology
