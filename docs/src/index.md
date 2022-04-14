@@ -13,7 +13,7 @@ The overall goal of this project is to achieve a step change in the accuracy of 
 
 - `TurbulenceConvection.jl` (TC) is a software package that implements the extended eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection. The package also provides standalone drivers to simulate the lower troposphere on a single-column basis. You can access the repository [here](https://github.com/CliMA/TurbulenceConvection.jl). The [documentation](https://clima.github.io/TurbulenceConvection.jl/dev/) for this package is still under development.
 
-- `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty. You can access the repository [here](https://github.com/CliMA/CalibrateEDMF.jl). The documentation for this package is still under development.
+- `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty. You can access the repository [here](https://github.com/CliMA/CalibrateEDMF.jl), and the documentation [here](https://clima.github.io/CalibrateEDMF.jl/dev/).
 
 
 Package                                     | Purpose
