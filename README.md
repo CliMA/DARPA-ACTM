@@ -1,6 +1,6 @@
 # DARPA-ACTM
 
-Centralized documentation of software products related to the DARPA AI-assisted Climate Tipping-point Modeling project. To access the documentation, click the badge below.
+Centralized documentation of software products related to the DARPA AI-assisted Climate Tipping-point Modeling project. To access the documentation, click on the `docs:latest` badge below.
 
  **Documentation**    | [![dev][docs-latest-img]][docs-latest-url]       |
 |----------------------|--------------------------------------------------|
