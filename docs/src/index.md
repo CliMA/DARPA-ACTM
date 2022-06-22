@@ -17,7 +17,7 @@ We address these ML issues by employing a hybrid model as a parameterization, an
 
 ### Code repositories and data libraries associated with the project
 
-The code-base for carrying out this research is part of the CLiMA [model](https://github.com/CliMA). This code is distributed among a large number of packages, and several of these are interacting to provide a modeling and learning framework in this project. The algorithm starts with a current parameter set (green $\theta$) which is passed to the model to produce closures ($\varepsilon$, $\delta$). Using these closures the EDMF model computes profiles of observed variables which are used to compute a loss. The loss informs the inversion algorithm which predicts a better set of parameters (orange $\theta$) and so on until the loss value converges. 
+The code-base for carrying out this research is part of the CLiMA [model](https://github.com/CliMA). This code is distributed among a large number of packages, and several of these are interacting to provide a modeling and learning framework in this project. The algorithm starts with a current parameter set (green $\theta$) which is passed to the model to produce closures ($\epsilon$, $\delta$). Using these closures the EDMF model computes profiles of observed variables which are used to compute a loss. The loss informs the inversion algorithm which predicts a better set of parameters (orange $\theta$) and so on until the loss value converges. 
 
 Package                                     | Purpose
 --------------------------------------------|--------------------------------------------------------
@@ -28,7 +28,7 @@ OperatorFlux.jl                             | A machine learning package for Fou
 LES library                                 | LES generated training data at current climate and 4K warming simulations
 
 The interaction between these components is illustrated in the figure below, where `CalibrateEDMF.jl`
-is the central package the communicate between the model `TurbulenceConvection.jl` the calibration algorithm `EnsembleKalmanProcesses.jl` and the data from the LES library. ![alt text](assets/dependency_diagram.pdf) 
+is the central package that communicates between the model `TurbulenceConvection.jl`, the calibration algorithm `EnsembleKalmanProcesses.jl`, and the data from the LES library. ![alt text](assets/dependency_diagram.pdf) 
 
 - `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty. You can access the repository [here](https://github.com/CliMA/CalibrateEDMF.jl), and the documentation [here](https://clima.github.io/CalibrateEDMF.jl/dev/).
 
