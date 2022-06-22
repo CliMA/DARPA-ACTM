@@ -8,7 +8,7 @@ using DocumenterCitations
 # See: https://github.com/jheinen/GR.jl/issues/278
 ENV["GKSwstype"] = "100"
 
-bib = CitationBibliography(joinpath(@__DIR__, "docs/bibliography.bib"))
+bib = CitationBibliography(joinpath(@__DIR__, "bibliography.bib"))
 
 const OUTPUT_DIR = joinpath(@__DIR__, "src/literated")
 
