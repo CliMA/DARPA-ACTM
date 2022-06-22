@@ -28,7 +28,7 @@ OperatorFlux.jl                             | A machine learning package for Fou
 LES library                                 | LES generated training data at current climate and 4K warming simulations
 
 The interaction between these components is illustrated in the figure below, where `CalibrateEDMF.jl`
-is the central package the communicate between the model `TurbulenceConvection.jl` the calibration algorithm `EnsembleKalmanProcesses.jl` and the data from the LES library. ![alt text](assets/dependency_diagram.pdf) 
+is the central package that communicates between the model `TurbulenceConvection.jl`, the calibration algorithm `EnsembleKalmanProcesses.jl`, and the data from the LES library. ![alt text](assets/dependency_diagram.pdf) 
 
 - `CalibrateEDMF.jl` is a software package that leverages the Bayesian optimization techniques housed in `EnsembleKalmanProcesses.jl` to learn cloud process parameterizations within an eddy-diffusivity mass-flux scheme (EDMF) of atmospheric turbulence and convection, and quantify their uncertainty. You can access the repository [here](https://github.com/CliMA/CalibrateEDMF.jl), and the documentation [here](https://clima.github.io/CalibrateEDMF.jl/dev/).
 
