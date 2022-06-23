@@ -16,13 +16,13 @@ We address these ML issues by employing a hybrid model that combines a physical 
 
 The code-base for carrying out this research is part of the CLiMA [model](https://github.com/CliMA). This code is distributed among a large number of packages, and several of these are interacting to provide a modeling and learning framework in this project.
 
-Package                                     | Purpose
---------------------------------------------|--------------------------------------------------------
-EnsembleKalmanProcesses.jl                  | Implementation of gradient-free optimization techniques
-TurbulenceConvection.jl                     | Implementation of EDMF scheme of turbulence, convection and clouds
-CalibrateEDMF.jl                            | Framework to learn about cloud processes from data
-OperatorFlux.jl                             | A machine learning package for Fourier Neural Operators
-LES library                                 | LES generated training data at current climate and 4K warming simulations
+Package                      | code  | docs | Purpose
+:----------------------------|:------|:-----|:-------------------------------------------------------
+CalibrateEDMF.jl             |[code](https://github.com/CliMA/CalibrateEDMF.jl) |[docs](https://clima.github.io/CalibrateEDMF.jl/dev/) | Framework to learn about cloud processes from data
+EnsembleKalmanProcesses.jl   |[code](https://github.com/CliMA/EnsembleKalmanProcesses.jl) |[docs](https://clima.github.io/EnsembleKalmanProcesses.jl/dev/) | Implementation of gradient-free optimization techniques
+TurbulenceConvection.jl      |[code](https://github.com/CliMA/TurbulenceConvection.jl) |[docs](https://clima.github.io/TurbulenceConvection.jl/dev/) | Implementation of EDMF scheme of turbulence, convection and clouds
+OperatorFlux.jl              |[code](https://github.com/CliMA/OperatorFlux.jl) |      | A machine learning package for Fourier Neural Operators
+LES library                  |[data](https://data.caltech.edu/records/20052)|      | LES generated training data at current climate and 4K warming simulations
 
 The interaction between these components is illustrated in the figure below, where `CalibrateEDMF.jl`
 is the central package that communicates between the model `TurbulenceConvection.jl`, the calibration algorithm `EnsembleKalmanProcesses.jl`, and the data from the LES library. The algorithm starts with a current parameter set (green $\theta$) which is passed to the EDMF model, and using FNOs, produces the closures ($\epsilon$, $\delta$). Using these closures the EDMF model computes profiles of observed variables, which are used to compute a loss. The loss informs the inversion algorithm which predicts a better set of parameters (orange $\theta$) and so on until the loss converges. 
@@ -36,10 +36,10 @@ Further information about the individual packages can be found in their document
 
 - `OperatorFlux.jl` is a software package for FNOs. You can access the repository [here](https://github.com/CliMA/OperatorFlux.jl).
 
-
-- The LES library use for training data is available here (https://data.caltech.edu/records/20052).
-
 - `EnsembleKalmanProcesses.jl` (EKP) is a library of derivative-free Bayesian optimization techniques based on the Ensemble Kalman Filters, a well known family of approximate filters used for data assimilation. You can access the repository [here](https://github.com/CliMA/EnsembleKalmanProcesses.jl), and the documentation [here](https://clima.github.io/EnsembleKalmanProcesses.jl/dev/).
+
+- The LES library use for training data is available [here](https://data.caltech.edu/records/20052).
+
 
 ### Principal Investigators
 
