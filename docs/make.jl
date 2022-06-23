@@ -1,11 +1,14 @@
 # reference in tree version of CalibrateEmulateSample
 
 using Documenter, Literate
+using DocumenterCitations
 
 # Gotta set this environment variable when using the GR run-time on CI machines.
 # This happens as examples will use Plots.jl to make plots and movies.
 # See: https://github.com/jheinen/GR.jl/issues/278
 ENV["GKSwstype"] = "100"
+
+bib = CitationBibliography(joinpath(@__DIR__, "bibliography.bib"))
 
 const OUTPUT_DIR = joinpath(@__DIR__, "src/literated")
 
@@ -14,6 +17,7 @@ const OUTPUT_DIR = joinpath(@__DIR__, "src/literated")
 pages = [
     "Home" => "index.md",
     "Our Team" => "people.md",
+    "References" => "References.md",
 ]
 
 #----------
@@ -21,6 +25,7 @@ pages = [
 format = Documenter.HTML(collapselevel = 1, prettyurls = !isempty(get(ENV, "CI", "")))
 
 makedocs(
+    bib,
     sitename = "CliMA DARPA-ACTM",
     authors = "CliMA Contributors",
     format = format,
